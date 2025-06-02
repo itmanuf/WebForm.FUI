@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginForm.aspx.cs" Inherits="WebForm.FUI.LoginForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginForm.aspx.cs" Inherits="WebForm.FUI.LoginForm" Async="true" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
     
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/login/Template" rel="stylesheet">
     
     <!-- Custom styles for this template-->
     <link href="css/login/sb-admin-2.min.css" rel="stylesheet">
@@ -39,24 +39,24 @@
 
                                     </div>
                                     
-                                    <form class="user">
+                                    <form class="user" runat="server">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                            <asp:TextBox runat="server" ID="exampleInputEmail" CssClass="form-control form-control-user" placeholder="Enter Email Address..."></asp:TextBox>
                                         </div>
                                         
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                            <asp:TextBox  class="form-control form-control-user" id="exampleInputPassword" runat="server" placeholder="Password"></asp:TextBox>
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="company" placeholder="Company" value="Inkom">
+                                            <asp:TextBox id="txtcompany" class="form-control form-control-user" runat="server"  placeholder="Company" value="Inkom" ></asp:TextBox>
                                         </div>
 
                                         <div class="form-group">
                                             <asp:Label ID="lblMessage" runat="server" CssClass="text-danger" Text=""></asp:Label>
                                         </div>
                                         
-                                        <a href="UserDashboardForm.aspx" class="btn btn-primary btn-user btn-block">Login </a>
+                                        <asp:Button id="btnLogin" runat="server" class="btn btn-primary btn-user btn-block" Text="Login" OnClick="btnLogin_Click"/> 
                                         
                                         <hr>                                    
                                   </form>
@@ -73,6 +73,29 @@
     </div>
 
 </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("exampleInputEmail").value;
+            var password = document.getElementById("exampleInputPassword").value;
+
+            // Validasi Email
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!email.match(emailPattern)) {
+                alert("Invalid email format!");
+                return false;
+            }
+
+            // Validasi Password
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters!");
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
     
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

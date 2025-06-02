@@ -181,8 +181,11 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CreateFUI.aspx" />
+    <Content Include="css\createfui\CreateFUI.css" />
     <Content Include="css\login\sb-admin-2.css" />
     <Content Include="css\login\sb-admin-2.min.css" />
+    <Content Include="css\login\Template.css" />
     <Content Include="css\user dashboard\userdash.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -2101,6 +2104,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFUI.aspx.cs">
+      <DependentUpon>CreateFUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateFUI.aspx.designer.cs">
+      <DependentUpon>CreateFUI.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

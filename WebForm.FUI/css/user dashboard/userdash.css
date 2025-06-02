@@ -18,6 +18,29 @@ h2 {
     margin-bottom: 20px;
 }
 
+.requester-label {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-reset {
+    background-color: #ccc;
+    color: black;
+    padding: 6px 12px;
+    margin-left: 8px;
+    border-radius: 4px;
+    border: 1px solid #999;
+}
+
+.btn-search {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    margin-left: 8px;
+    border-radius: 4px;
+    border: 1px solid #999;
+}
+
 .btn-detail {
     background-color: #007bff;
     color: white;
