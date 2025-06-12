@@ -32,7 +32,7 @@ namespace WebForm.FUI
             var username = exampleInputEmail.Text.Trim();
             var password = exampleInputPassword.Text;
 
-            var loginData = new { Username = username, Password = password };
+            var loginData = new { UserName = username, Password = password };
             var json = JsonConvert.SerializeObject(loginData);
             var url = "http://10.14.90.49/apimanuffui/Services.svc/rest/LoginLDAP";
 

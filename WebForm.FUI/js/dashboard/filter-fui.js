@@ -21,3 +21,8 @@
         }
     });
 });
+
+function viewDetail(documentNo) {
+    // Redirect ke DetailAssetForm.aspx dengan parameter DocumentNo
+    window.location.href = "DetailAssetForm.aspx?DocumentNo=" + documentNo;
+}

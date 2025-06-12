@@ -10,7 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <h2><button type="button" class="btn-detail">CREATE NEW FUI</button></h2>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h2><button type="button" class="btn-detail" onclick="location.href='CreateFUI.aspx'">CREATE NEW FUI</button></h2>
+                </div>
+                <asp:Button ID="BtnLogout" runat="server" Text="Logout" CssClass="btn-logout" />               
+            </div>          
+            
             <div class="user-info">
                 <%--<asp:Label ID="lblRequester" runat="server" Text="Requester: " CssClass="requester-label"></asp:Label>
                 <asp:Label ID="lblMessage" runat="server" Text="msg: " CssClass="msg-label"></asp:Label>--%>
@@ -26,8 +32,7 @@
                             <th>Requester Department</th>
                             <th>UserDepartment</th>
                             <th>Invest Type</th>
-                            <th>Schedule Requirement Start</th>
-                            <th>Schedule Requirement End</th>
+                            <th>Masspro Date</th>                            
                             <th>TotalBudget</th>
                             <th>Status Approval</th>
                             <th>Action</th>
@@ -35,16 +40,15 @@
                     </thead>
                     
                     <tr class="filter-row">
-                        <td><asp:TextBox runat="server" id="DocumentNo" class="idfui" /></td>
-                        <td><asp:TextBox runat="server" id="NomorFUI" class="nofui" /></td>
+                        <td><asp:TextBox runat="server" id="DocumentNo" class="idfui" Enabled="false" /></td>
+                        <td><asp:TextBox runat="server" id="NomorFUI" class="nofui" Enabled="false"  /></td>
                         <td><asp:TextBox runat="server" id="ProjectName" class="namaproject" /></td>
-                        <td><asp:TextBox runat="server" id="RequesterName" class="requester"  /></td>
+                        <td><asp:TextBox runat="server" id="RequesterName" class="requester" Enabled="false"  /></td>
                         <td><asp:TextBox runat="server" id="RequesterDepartment" class="reqdept" /></td>
                         <td><asp:TextBox runat="server" id="UserDepartment" class="userdept" /></td>
-                        <td><asp:TextBox runat="server" id="InvestType" class="invtype"  /></td>
-                        <td><asp:TextBox runat="server" id="ScheduleRequirementStart" class="schedulereqstart"  /></td>
-                        <td><asp:TextBox runat="server" id="scheduleRequirementEnd" class="schedulereqend" /></td>
-                        <td><asp:TextBox runat="server" id="TotalBudget" class="totalbudget" /></td>
+                        <td><asp:TextBox runat="server" id="InvestType" class="invtype" Enabled="false"  /></td>
+                        <td><asp:DropDownList runat="server" id="MassproDate" class="massprodate"  /></td>                       
+                        <td><asp:TextBox runat="server" id="TotalBudget" class="totalbudget" Enabled="false" /></td>
                         <td><asp:TextBox runat="server" id="StatusApproval" class="statusaprvl" /></td>                       
                     </tr>
 
@@ -61,7 +65,8 @@
         </div>
     </form>
 
-    <script src="js/dashboard/filter-fui.js"></script>
+    <script src="js/dashboard/filter-fui.js">
+    </script>
 
 </body>
 </html>

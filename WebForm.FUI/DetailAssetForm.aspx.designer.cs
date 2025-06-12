@@ -11,7 +11,7 @@ namespace WebForm.FUI
 {
 
 
-    public partial class CreateFUI
+    public partial class DetailAssetForm
     {
 
         /// <summary>
@@ -78,13 +78,13 @@ namespace WebForm.FUI
         protected global::System.Web.UI.WebControls.TextBox nomorFUI;
 
         /// <summary>
-        /// RequesterName control.
+        /// requester control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RequesterName;
+        protected global::System.Web.UI.WebControls.TextBox requester;
 
         /// <summary>
         /// requesterdep control.
@@ -102,7 +102,7 @@ namespace WebForm.FUI
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList userdep;
+        protected global::System.Web.UI.WebControls.TextBox userdep;
 
         /// <summary>
         /// investmentType control.
@@ -114,13 +114,13 @@ namespace WebForm.FUI
         protected global::System.Web.UI.WebControls.DropDownList investmentType;
 
         /// <summary>
-        /// txtStartDate control.
+        /// txtmasproDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStartDate;
+        protected global::System.Web.UI.WebControls.TextBox txtmasproDate;
 
         /// <summary>
         /// calStartDate control.
@@ -177,6 +177,24 @@ namespace WebForm.FUI
         protected global::System.Web.UI.WebControls.FileUpload fuiForm;
 
         /// <summary>
+        /// lblFuiFormFileName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFuiFormFileName;
+
+        /// <summary>
+        /// linkFuiFormDownload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkFuiFormDownload;
+
+        /// <summary>
         /// momBod control.
         /// </summary>
         /// <remarks>
@@ -184,6 +202,24 @@ namespace WebForm.FUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload momBod;
+
+        /// <summary>
+        /// lblMOMBOD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMOMBOD;
+
+        /// <summary>
+        /// linkMOMBOD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkMOMBOD;
 
         /// <summary>
         /// memoAsset control.
@@ -195,6 +231,24 @@ namespace WebForm.FUI
         protected global::System.Web.UI.WebControls.FileUpload memoAsset;
 
         /// <summary>
+        /// lblMemo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMemo;
+
+        /// <summary>
+        /// linkMemo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkMemo;
+
+        /// <summary>
         /// beritaAcara control.
         /// </summary>
         /// <remarks>
@@ -202,6 +256,24 @@ namespace WebForm.FUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload beritaAcara;
+
+        /// <summary>
+        /// lblberitaAcara control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblberitaAcara;
+
+        /// <summary>
+        /// linkberitaAcara control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkberitaAcara;
 
         /// <summary>
         /// attachmentOther control.
@@ -213,6 +285,24 @@ namespace WebForm.FUI
         protected global::System.Web.UI.WebControls.FileUpload attachmentOther;
 
         /// <summary>
+        /// lblAttch1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAttch1;
+
+        /// <summary>
+        /// linkAttch1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkAttch1;
+
+        /// <summary>
         /// attachmentOther1 control.
         /// </summary>
         /// <remarks>
@@ -220,6 +310,24 @@ namespace WebForm.FUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload attachmentOther1;
+
+        /// <summary>
+        /// lblAttch2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAttch2;
+
+        /// <summary>
+        /// linkAttch2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkAttch2;
 
         /// <summary>
         /// project control.
@@ -256,5 +364,14 @@ namespace WebForm.FUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox statuscnvrt;
+
+        /// <summary>
+        /// rptDetailAsset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptDetailAsset;
     }
 }

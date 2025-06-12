@@ -11,7 +11,7 @@ namespace WebForm.FUI
 {
 
 
-    public partial class UserDashboardForm
+    public partial class DetailItemForm
     {
 
         /// <summary>
@@ -24,129 +24,147 @@ namespace WebForm.FUI
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// BtnLogout control.
+        /// txtRequester control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogout;
+        protected global::System.Web.UI.WebControls.TextBox txtRequester;
 
         /// <summary>
-        /// DocumentNo control.
+        /// txtRequestPayment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DocumentNo;
+        protected global::System.Web.UI.WebControls.TextBox txtRequestPayment;
 
         /// <summary>
-        /// NomorFUI control.
+        /// txtDisposition control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NomorFUI;
+        protected global::System.Web.UI.WebControls.TextBox txtDisposition;
 
         /// <summary>
-        /// ProjectName control.
+        /// nomorfui control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ProjectName;
+        protected global::System.Web.UI.WebControls.TextBox nomorfui;
 
         /// <summary>
-        /// RequesterName control.
+        /// nodetail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RequesterName;
+        protected global::System.Web.UI.WebControls.TextBox nodetail;
 
         /// <summary>
-        /// RequesterDepartment control.
+        /// item control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RequesterDepartment;
+        protected global::System.Web.UI.WebControls.TextBox item;
 
         /// <summary>
-        /// UserDepartment control.
+        /// itemdescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UserDepartment;
+        protected global::System.Web.UI.WebControls.TextBox itemdescription;
 
         /// <summary>
-        /// InvestType control.
+        /// orderqty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox InvestType;
+        protected global::System.Web.UI.WebControls.TextBox orderqty;
 
         /// <summary>
-        /// MassproDate control.
+        /// unit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList MassproDate;
+        protected global::System.Web.UI.WebControls.TextBox unit;
 
         /// <summary>
-        /// TotalBudget control.
+        /// buy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TotalBudget;
+        protected global::System.Web.UI.WebControls.TextBox buy;
 
         /// <summary>
-        /// StatusApproval control.
+        /// bpd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StatusApproval;
+        protected global::System.Web.UI.WebControls.TextBox bpd;
 
         /// <summary>
-        /// DataTableContainer control.
+        /// price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DataTableContainer;
+        protected global::System.Web.UI.WebControls.TextBox price;
 
         /// <summary>
-        /// BtnSearch control.
+        /// amount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSearch;
+        protected global::System.Web.UI.WebControls.TextBox amount;
 
         /// <summary>
-        /// BtnReset control.
+        /// currency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnReset;
+        protected global::System.Web.UI.WebControls.TextBox currency;
+
+        /// <summary>
+        /// projectcode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox projectcode;
+
+        /// <summary>
+        /// nopurchase control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox nopurchase;
     }
 }

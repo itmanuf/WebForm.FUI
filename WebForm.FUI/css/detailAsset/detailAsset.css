@@ -1,6 +1,6 @@
 ﻿/* General container styling */
 .form-container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f8f8f8;
@@ -8,25 +8,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.form-container2 {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Form styling */
 .fui-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.fui-form2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -61,7 +46,7 @@
 
         /* File upload buttons styling */
         .form-row input[type="file"] {
-             /* Hide the default file input */
+            /* Hide the default file input */
         }
 
 .file-upload-btn {
@@ -91,43 +76,18 @@
 .submit-btn {
     background-color: #007BFF;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /*grid-column: span 2;*/ /* Span across both columns */
+    grid-column: span 2; /* Span across both columns */
     transition: background-color 0.3s ease;
-    margin-bottom: 20px;
 }
 
     .submit-btn:hover {
         background-color: #0056b3;
     }
-
-.btn-save {
-    background-color: #007bff;
-    color: white;
-    padding: 6px 12px;
-    margin-left: 8px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #999;
-}
-
-.btn-logout {
-    background-color: #dc3545;
-    color: white;
-    padding: 6px 12px;
-    margin-left: 8px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #999;
-    font-size: 16px;
-    vertical-align: middle;
-}
-
-
 
 /* Grid styling for form display */
 .fui-form .form-row:nth-child(odd) {
@@ -139,43 +99,30 @@
 }
 
 /* Table styling */
-.table-responsive {
-    overflow-x: auto;
-    border-radius: 8px;
-}
 .asset-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
     .asset-table th, .asset-table td {
-        padding: 30px;
+        padding: 10px;
         border: 1px solid #ddd;
         text-align: left;
-        table-layout: fixed;
-        white-space: nowrap;
     }
 
     .asset-table th {
         background-color: #f4f4f4;
-        font-size: 12px;
-        width: 10%;
+        font-size: 14px;
     }
 
-    .asset-table td {
-        width: 10%; /* Set a fixed width for each column */
+    .asset-table td input {
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
-
-        .asset-table td input {
-            width: 100%;
-            padding: 8px;
-            font-size: 14px;
-            border: none;
-             box-sizing: border-box;
-        }
 
         .asset-table td input:focus {
             border-color: #007BFF;
@@ -224,27 +171,4 @@
         flex-direction: column;
         align-items: flex-start;
     }
-}
-
-.modal {
-    position: fixed;
-    top: 10%;
-    left: 20%;
-    width: 60%;
-    background: white;
-    border: 1px solid #888;
-    z-index: 9999;
-    padding: 20px;
-    box-shadow: 0 0 10px #aaa;
-}
-
-.modal-content {
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.close {
-    float: right;
-    font-size: 20px;
-    cursor: pointer;
 }
